@@ -6,6 +6,10 @@ This dictionary is meant as a reference to find kanji when you dont have access 
 
 It's sorted by radical and stroke count.
 
+# Example
+
+![Page 16](./example-page.png)
+
 # Download
 
 If unsure what to download, [download this](./kanji-sakuin-byside.pdf).
@@ -19,8 +23,8 @@ There are 2 versions of the dictionary.
      1. the pic below is from this version
 
 - **Links**:
-  - **Byside**: [html](), [pdf]()
-  - **Inside**: [html](), [pdf]()
+  - **Byside**: [html](./kanji-sakuin-byside.html), [pdf](./kanji-sakuin-byside.pdf)
+  - **Inside**: [html](https://gitlab.com/ekaunt/kanji-sakuin/-/raw/master/kanji-sakuin-inside.html), [pdf](https://gitlab.com/ekaunt/kanji-sakuin/-/raw/master/kanji-sakuin-inside.pdf)
 
 ## Key
 
