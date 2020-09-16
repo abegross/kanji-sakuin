@@ -8,7 +8,7 @@ It's sorted by radical and stroke count.
 
 # Example
 
-![Page 16](./example-page.png)
+![Page 16](example-page.png)
 
 # Download
 
@@ -23,7 +23,7 @@ There are 2 versions of the dictionary.
      1. the pic below is from this version
 
 - **Links**:
-  - **Byside**: [html](./kanji-sakuin-byside.html), [pdf](./kanji-sakuin-byside.pdf)
+  - **Byside**: [html](https://gitlab.com/ekaunt/kanji-sakuin/-/raw/master/kanji-sakuin-byside.html), [pdf](https://gitlab.com/ekaunt/kanji-sakuin/-/raw/master/kanji-sakuin-byside.pdf)
   - **Inside**: [html](https://gitlab.com/ekaunt/kanji-sakuin/-/raw/master/kanji-sakuin-inside.html), [pdf](https://gitlab.com/ekaunt/kanji-sakuin/-/raw/master/kanji-sakuin-inside.pdf)
 
 ## Key
