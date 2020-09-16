@@ -4,6 +4,7 @@ curl --output kanjidic2.xml.gz http://nihongo.monash.edu/kanjidic2/kanjidic2.xml
 gzip -d kanjidic2.xml.gz
 xq . kanjidic2.xml > kanjidic2.json
 
+echo "Sorting by radicals"
 jq --argjson radicals '{
   "1": { "radical": "一", "strokes": "1" },
   "2": { "radical": "丨", "strokes": "1" },
@@ -234,6 +235,7 @@ korean: [.reading_meaning.rmgroup.reading|(if type == "array" then .[]|(select(.
 #jq '[.[]|select(.kanji==.radical[0:1])]|sort|[.[]|{(.radical):(.strokes)}]|reduce .[] as $m ({}; . + $m)' temp.json>radicals-strokes.json
 #jq --slurpfile rads radicals-strokes.json 'group_by(.radical)|[.[]|sort_by(.strokes)]|.[]|={radical: .[0].radical,strokes: ($rads[]."\(.[0].radical)"),list: .}' temp.json>kanji-sakuin.json
 
+echo "adding variants to each kanji"
 raku -MJSON::Fast -e 'my $file = "kanji-sakuin.json".IO.slurp or die "cant open kanji-sakuin.json";
 
 my $radicals = from-json($file);
@@ -266,3 +268,8 @@ for $radicals.kv -> $i, $rads {
 }
 say to-json $radicals
 ' kanji-sakuin.json | sponge kanji-sakuin.json
+
+echo "generating the html files"
+echo "use chromium to generate the pdf"
+raku ./kanji-sakuin.raku > kanji-rakuin-byside.html
+raku ./kanji-sakuin-inside.raku > kanji-rakuin-inside.html
