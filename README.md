@@ -1,6 +1,6 @@
 # Kanji Sakuin
 
-A complete Japanese kanji index dictionary.
+A complete Japanese kanji index dictionary with 13,108 entries.
 
 This dictionary is meant as a reference to find kanji when you dont have access to an electronic dictionary. (the same reason why you might want a physical regular dictionary)
 
@@ -38,5 +38,12 @@ There are 2 versions of the dictionary.
  - **Brown**: variants (異体字/俗字) of a given kanji are surrounded by double angle brackets: 《variant》
  - **Readings**:
    - **Katakana**: onyomi
+   - **Hangul**: The korean reading of every kanji is parenthesized after the onyomi reading
    - **Hirigana**: kunyomi
    - **Yellow/following "㊔"**: nanori (名乗り)
+
+## License
+
+The dataset was taken from [Kanjidic](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) in accordance with the licence provisions of the Electronic Dictionaries Research Group. See http://www.edrdg.org/.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
